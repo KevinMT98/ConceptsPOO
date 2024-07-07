@@ -1,6 +1,4 @@
-﻿using System.IO.Pipes;
-
-namespace ConceptsPOO
+﻿namespace ConceptsPOO
 {
     public class Date
     {
@@ -14,8 +12,8 @@ namespace ConceptsPOO
             _year = year;
             _month = checkMonth(month);
             _day = CheckDay(year, month, day);
-                
-            
+
+
         }
 
         private int CheckDay(int year, int month, int day) // metodos
@@ -37,7 +35,7 @@ namespace ConceptsPOO
 
         private bool IsLeapYear(int year)
         {
-            return year % 400 == 0 || year % 4 == 0 && year % 100 !=0;
+            return year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
 
         }
 
@@ -47,7 +45,7 @@ namespace ConceptsPOO
             {
                 return month;
             }
-            
+
             throw new MonthException("Invalid month");
         }
 
