@@ -18,7 +18,7 @@ namespace ConceptsPOO
             
         }
 
-        private int CheckDay(int year, int month, int day)
+        private int CheckDay(int year, int month, int day) // metodos
         {
 
             if (month == 2 && day == 29 && IsLeapYear(year))
